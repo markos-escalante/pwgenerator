@@ -22,6 +22,6 @@
     }
   
   
-    document.getElementById("#display").value = password;
+    document.getElementById("#password").value = password;
   
   }
