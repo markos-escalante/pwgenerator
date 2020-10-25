@@ -15,8 +15,10 @@
   for (var i = 5; i < userInputs.length; i++) {
     alert("You're creating a safe and secure password!");
   }
+  if (userInputs === false) {
+    alert("Oh no! These requirements are needed to create a safe password try again.");
+  }
 
-  
   generateBtn.addEventListener("click", writePassword);
   
   function generateBtn() {
@@ -28,6 +30,6 @@
       password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length -1)));
     }
   
-    document.getElementById("#password").value = password;
+    document.getElementById("textarea").value = password;
   
   }
